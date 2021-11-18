@@ -1,0 +1,101 @@
+html{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.calc{
+    width: 250px;
+    height: 350px;
+    text-align: center !important;
+    vertical-align: middle !important;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(90deg, rgba(2,0,36,0.8) 35%, rgba(119,0,96,0.8) 100%, rgba(0,146,255,0.8) 5%);
+    padding: 50px 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+.buttons-digit{
+    width: 250px;
+    height: 250px;
+    text-align: center !important;
+    vertical-align: middle !important;
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result{
+    background: #fff;
+    width: 230px;
+    height: 50px;
+    text-align: center !important;
+    vertical-align: middle !important;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+.digits{
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px !important; 
+    height: 50px !important;
+    border: none;
+    border-radius: 50%;
+    font-family: 'Orbitron', sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+.digits:hover{
+    background: rgba(255,255,255,0.8);
+}
+
+.operation{
+    width: 25% !important; 
+    height: 25% !important;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+
+body, head, h1{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: linear-gradient(90deg, rgba(2,0,36,0.8) 35%, rgba(119,0,96,0.8) 100%, rgba(0,146,255,0.8) 5%);
+    color:#fff;
+    text-align: center !important;
+    vertical-align: middle !important;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+
+footer{
+    background: linear-gradient(90deg, rgba(2,0,36,0.8) 35%, rgba(119,0,96,0.8) 100%, rgba(0,146,255,0.8) 5%);
+    size: 5px;
+    color: #fff;
+    text-align: center !important;
+    vertical-align: middle !important;
+    margin: none;
+    margin-left: none;
+    margin-right: none;
+    padding: 75px 75px;
+
+}
