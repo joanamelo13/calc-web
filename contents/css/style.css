@@ -1,13 +1,6 @@
-html{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
 .calc{
     width: 250px;
-    height: 350px;
+    height: 400px;
     text-align: center !important;
     vertical-align: middle !important;
     margin: auto;
@@ -32,8 +25,8 @@ html{
 .result{
     background: #fff;
     width: 230px;
-    height: 50px;
-    text-align: center !important;
+    height: 80px;
+    text-align: right !important;
     vertical-align: middle !important;
     margin: auto;
     margin-left: auto;
@@ -42,6 +35,7 @@ html{
     font-family: 'Orbitron', sans-serif;
     border: none;
     border-radius: 5px;
+    font-size: 34px;
 }
 
 .digits{
@@ -55,15 +49,76 @@ html{
     font-family: 'Orbitron', sans-serif;
     color: #000;
     background: #fff;
+    border: 1px solid;
+    border-color: #fff;
+    font-size: 20px;
 }
 
 .digits:hover{
     background: rgba(255,255,255,0.8);
 }
+.digits-equal{
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px !important; 
+    height: 50px !important;
+    border: none;
+    border-radius: 50%;
+    font-family: 'Orbitron', sans-serif;
+    color:#fff;
+    border: 1px solid;
+    border-color: #fce903;
+    background: #fce903;
+    font-size: 20px;
+}
+.digits-del{
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px !important; 
+    height: 50px !important;
+    border: none;
+    border-radius: 50%;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    background:#ff0000;
+    border: 1px solid;
+    border-color: #ff0000;
+    font-size: 20px;
+}
+
+.digits-clear{
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px !important; 
+    height: 50px !important;
+    border: none;
+    border-radius: 50%;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    background: #57E831;
+    border: 1px solid;
+    border-color:#57e831;
+    font-size: 20px;
+}
+
+.digits-equal:hover{
+    background: rgba(255,236,79,0.8);
+}
+
+.digits-clear:hover{
+   background:rgba(87,232,49,0.8);
+}
+
+.digits-del:hover{
+    background: rgba(255,0,0,0.8);
+}
 
 .operation{
-    width: 25% !important; 
-    height: 25% !important;
+    width: 15% !important; 
+    height: 30% !important;
     margin: auto;
     margin-left: auto;
     margin-right: auto;
@@ -71,6 +126,12 @@ html{
     vertical-align: middle !important;
 }
 
+html{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
 
 body, head, h1{
     margin: 0;
@@ -85,6 +146,7 @@ header{
     margin: 0;
     padding: 0;
     border: 0px;
+    font-family: 'Playfair Display', serif;
 }
 
 footer{
@@ -97,5 +159,5 @@ footer{
     margin-left: none;
     margin-right: none;
     padding: 75px 75px;
-
+    font-family: 'Playfair Display', serif;
 }

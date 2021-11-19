@@ -7,13 +7,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
         <title>Calculadora</title>
     </head>
     <header>
         <div class="background">
             <h1>Calculadora</h1>
             <h2>Operações disponíveis:</h2> 
-            <ul>
                 <table class="operation">
                     <th>
                         <li>Soma</li>
@@ -26,53 +26,53 @@
                         <li>Radiciação</li>
                     </th>
                 </table>
-            </ul>
             <br>
         </div>
     </header>
     <body>
-        <br><br><br><br>
+        <br><br><br><br><br>
         <div class="calc">
             <p class="result" id="resultado"></p>
-            <br>
+            <br><br>
             <table class="buttons-digit">
                 <tr>
-                    <td><input class="digits" type="button" value="C"></td>
-                    <td><input class="digits" type="button" value="x²"></td>
-                    <td>­<input class="digits" type="button" value="√"></td>
-                    <td><input class="digits" type="button" value="⌫"></td>
+                    <td><button class="digits-clear" onclick="clean()">C</button></td>
+                    <td><button class="digits" onclick="insert('**')">x²</button></td>
+                    <td><button class="digits" onclick="insert('**(1/2)')">√</button></td>
+                    <td><button class="digits-del" onclick="goback()">⌫</button></td>
                 </tr>
                 <tr>
-                    <td><input class="digits" type="button" value="7"></td>
-                    <td><input class="digits" type="button" value="8"></td>
-                    <td>­<input class="digits" type="button" value="9"></td>
-                    <td><input class="digits" type="button" value="÷"></td>
+                    <td><button class="digits" onclick="insert('7')">7</button></td>
+                    <td><button class="digits" onclick="insert('8')">8</button></td>
+                    <td><button class="digits" onclick="insert('9')">9</button></td>
+                    <td><button class="digits" onclick="insert('/')">÷</button></td>
                 </tr>
                 <tr>
-                    <td><input class="digits" type="button" value="4"></td>
-                    <td><input class="digits" type="button" value="5"></td>
-                    <td>­<input class="digits" type="button" value="6"></td>
-                    <td><input class="digits" type="button" value="x"></td>
+                    <td><button class="digits" onclick="insert('4')">4</button></td>
+                    <td><button class="digits" onclick="insert('5')">5</button></td>
+                    <td><button class="digits" onclick="insert('6')">6</button></td>
+                    <td><button class="digits" onclick="insert('*')">x</button></td>
                 </tr>
                 <tr>
-                    <td><input class="digits" type="button" value="1"></td>
-                    <td><input class="digits" type="button" value="2"></td>
-                    <td>­<input class="digits" type="button" value="3"></td>
-                    <td><input class="digits" type="button" value="-"></td>
+                    <td><button class="digits" onclick="insert('1')">1</button></td>
+                    <td><button class="digits" onclick="insert('2')">2</button></td>
+                    <td><button class="digits" onclick="insert('3')">3</button></td>
+                    <td><button class="digits" onclick="insert('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td><input class="digits" type="button" value="•"></td>
-                    <td><input class="digits" type="button" value="0"></td>
-                    <td><input class="digits" type="button" value="="></td>
-                    <td><input class="digits" type="button" value="+"></td>
+                    <td><button class="digits" onclick="insert('.')">•</button></td>
+                    <td><button class="digits" onclick="insert('0')">0</button></td>
+                    <td><button class="digits-equal" onclick="calculate()">=</button></td>
+                    <td><button class="digits" onclick="insert('+')">+</button></td>
                 </tr>
             </table>
         </div>
-        <br><br><br><br>
+        <br><br><br><br><br>
     </body>
     <footer>
         <br>
         <p>Developed by Joana Melo<br>All rights reserved,  2021</p>
+        <script src="./scripts/script.js"></script>
     </footer>
 
 </html>
